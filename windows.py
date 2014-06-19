@@ -3,12 +3,12 @@ import sys
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 
-class MainWindow(QMainWindow):
+class CropWindow(QMainWindow):
     """The Main Window for my Application"""
 
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Hello World")
+        self.setWindowTitle("Crop Simulator")
         self.create_layout()
 
     def create_layout(self):
@@ -32,8 +32,8 @@ class MainWindow(QMainWindow):
         self.label.setText("Hello {0}!".format(name))
 
 if __name__ == "__main__":
-    application = QApplication(sys.argv)
-    window = MainWindow()
-    window.show()
-    window.raise_()
-    application.exec_()
+    crop_simulation = QApplication(sys.argv)
+    crop_window = CropWindow()
+    crop_window.show()
+    crop_window.raise_()
+    crop_simulation.exec_()
