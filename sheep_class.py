@@ -1,10 +1,10 @@
 from animal_class import *
-class Cow(Animal):
-    """A Cow Class"""
+class Sheep(Animal):
+    """A Sheep Class"""
 
     def __init__(self):
         super().__init__(9,250,1,8)
-        self._type = "Cow"
+        self._type = "Sheep"
 
     def grow(self,food_need,water_need):
         if food_need >= self._food_need and water_need >= self._water_need:
@@ -18,12 +18,12 @@ class Cow(Animal):
         self.update_status()
 
 def main():
-    cow_animal = Cow()
-    print(cow_animal.report())
-    manual_grow(cow_animal)
-    print(cow_animal.report())
-    manual_grow(cow_animal)
-    print(cow_animal.report())
+    sheep_animal = Cow()
+    print(sheep_animal.report())
+    manual_grow(sheep_animal)
+    print(sheep_animal.report())
+    manual_grow(sheep_animal)
+    print(sheep_animal.report())
 
 if __name__ == "__main__":
     main()
