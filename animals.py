@@ -27,14 +27,14 @@ def create_crop():
     display_menu()
     choice = select_option()
     if choice == 1:
-        new_crop = Cow()
+        new_animal = Cow()
     elif choice == 2:
-        new_crop = Sheep()
-    return new_crop
+        new_animal = Sheep()
+    return new_animal
 
 def main():
-    new_crop = create_crop()
-    manage_crop(new_crop)
+    new_animal = create_animal()
+    manage_animal(new_animal)
 
 if __name__ == "__main__":
     main()
